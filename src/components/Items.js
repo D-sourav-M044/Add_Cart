@@ -14,17 +14,17 @@ export default function Items({
   price = price * quantity;
   price.toFixed(2);
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
+    <div className="container">
+      <div className="row">
+        <div className="col-sm">
           <img
             src={image}
             alt="iamge"
             style={{ width: "100px", height: "100px" }}
           />
         </div>
-        <div class="col-sm">{title}</div>
-        <div class="col-sm">
+        <div className="col-sm">{title}</div>
+        <div className="col-sm">
           <button
             type="button"
             className="btn btn-primary btn-sm"
@@ -32,7 +32,7 @@ export default function Items({
           >
             -
           </button>
-          {/* <p className={mixClasses.pText}>{10}</p> */}
+          {/* <p className=ame={mixClasses.pText}>{10}</p> */}
           <input
             type="text"
             placeholder={quantity}
@@ -46,8 +46,8 @@ export default function Items({
             +
           </button>
         </div>
-        <div class="col-sm">{price}</div>
-        <div class="col-sm">
+        <div className="col-sm">{price}</div>
+        <div className="col-sm">
           <button
             type="button"
             className="btn btn-primary btn-sm"
@@ -61,7 +61,7 @@ export default function Items({
             />
           </button>
         </div>
-        <div class="col-sm"></div>
+        <div className="col-sm"></div>
       </div>
     </div>
   );
