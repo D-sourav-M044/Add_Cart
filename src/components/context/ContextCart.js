@@ -21,15 +21,15 @@ export default function ContextCart() {
         <h3> total ammoun is {totalAmount}Tk.</h3>
         <Link to="/checkout">
           <button
-          type="button"
-          className="btn btn-primary btn-sm"
-          onClick={() => clearCart()}
-        >
-          Check Out
-        </button>
+            type="button"
+            className="btn btn-primary btn-sm"
+            onClick={() => clearCart()}
+          >
+            Check Out
+          </button>
         </Link>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <button
           type="button"
           className="btn btn-primary btn-sm"

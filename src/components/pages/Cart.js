@@ -11,7 +11,7 @@ export const initalState = {
   item: datas,
   totalAmmount: 0,
   totalItem: 0,
-  cart: 0
+  cart: 0,
 };
 
 export default function Cart() {
@@ -30,7 +30,6 @@ export default function Cart() {
       payload: id,
     });
   };
-
 
   const clearCart = () => {
     return dispatch({ type: "CLEAR_CART" });
@@ -53,23 +52,28 @@ export default function Cart() {
   };
   const buttonClick = (cart) => {
     return dispatch({
-        type: "BUTTON",
-        payload: cart,
-        
-      });
+      type: "BUTTON",
+      payload: cart,
+    });
   };
 
   useEffect(() => {
     dispatch({ type: "GET_TOTAL" });
-    
-    
   }, [state.item]);
   return (
     <>
       <main className={classes.main}>
         <div className={classes.container}>
           <cartContex.Provider
-            value={{ ...state,addItem, removeItem, clearCart, increment, decrement, buttonClick }}
+            value={{
+              ...state,
+              addItem,
+              removeItem,
+              clearCart,
+              increment,
+              decrement,
+              buttonClick,
+            }}
           >
             <Nav />
             <ContextCart />

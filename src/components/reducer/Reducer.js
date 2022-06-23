@@ -8,8 +8,6 @@ export const Reducer = (state, action) => {
     });
 
     return { ...state, item: updatedCart };
-
-    
   }
 
   if (action.type === "BUTTON") {
@@ -28,9 +26,7 @@ export const Reducer = (state, action) => {
   }
   if (action.type === "CLEAR_CART") {
     const updatedCart = state.item.map((curElem) => {
-     
-        return { ...curElem, quantity: 0 };
-    
+      return { ...curElem, quantity: 0 };
     });
     return { ...state, item: updatedCart };
   }
@@ -47,13 +43,12 @@ export const Reducer = (state, action) => {
   }
 
   if (action.type === "DECREMENT") {
-    const updatedCart = state.item
-      .map((curElem) => {
-        if (curElem.id === action.payload) {
-          return { ...curElem, quantity: curElem.quantity - 1 };
-        }
-        return curElem;
-      })
+    const updatedCart = state.item.map((curElem) => {
+      if (curElem.id === action.payload) {
+        return { ...curElem, quantity: curElem.quantity - 1 };
+      }
+      return curElem;
+    });
     //   .filter((curElem) => curElem.quantity !== 0);
     // return { ...state, item: updatedCart };
     return { ...state, item: updatedCart };

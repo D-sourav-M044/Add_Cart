@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.jpg";
-import classes from "../styles/Nav.module.css";
 import Lclasses from "../styles/Layout.module.css";
-import Carty from "./pages/Carty";
+import classes from "../styles/Nav.module.css";
+
 export default function CheckOut() {
   return (
     <>
@@ -17,11 +17,10 @@ export default function CheckOut() {
         </ul>
       </nav>
 
-        <main className={Lclasses.main}>
+      <main className={Lclasses.main}>
         <div className={Lclasses.container}>
-            Your order has been placed . Thank You.
-            
-            </div>
+          Your order has been placed . Thank You.
+        </div>
       </main>
     </>
   );
