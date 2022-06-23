@@ -1,4 +1,4 @@
-Project URL : https://graceful-biscochitos-291c32.netlify.app/checkout
+Project URL : https://graceful-biscochitos-291c32.netlify.app
 
 To install required package to run the project "npm i" should be used.
 <br/>
